@@ -1,0 +1,42 @@
+### IntelliJ IDEA ###
+.idea/
+.idea/**
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Local application data may contain credentials and customer information.
+/AdminCredentials.txt
+/records.txt
+
+# Runtime bills and generated output.
+/bill*.txt
+/out/
+
+# Keep the safe setup template available in Git.
+!/AdminCredentials.example.txt
