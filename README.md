@@ -65,8 +65,7 @@ This project is a desktop pharmacy management and checkout application. A custom
 └── README.md
 ```
 
-Runtime files such as `AdminCredentials.txt`, `records.txt`, and generated `bill_*.txt` files are created or used in the project working directory. They are not included in the repository. `out/` is a local compilation output directory.
-
+Runtime files such as `AdminCredentials.txt` and `records.txt` files are created or used in the project working directory. They are not included in the repository.
 ## Run the application
 
 ### Requirements
@@ -133,7 +132,3 @@ This structure is straightforward for a learning project, though separating UI, 
 - Input validation and error handling are basic. Invalid numeric input can interrupt inventory actions, and the app does not provide production-grade stock, identity, or billing controls.
 - The checkout stock check evaluates each bill row independently. Repeated entries for the same medicine may therefore exceed the total stock even when each row is individually within stock.
 - Bills include customer contact/address details and are written as plain text. Keep generated bills private.
-
-## GitHub safety
-
-The repository should include the Java source, this README, `.gitignore`, the safe `AdminCredentials.example.txt` template, and demo `medlist.txt`. Do not push `AdminCredentials.txt`, `records.txt`, generated bills, compiled `out/` files, `.idea/` workspace settings, or `.DS_Store` files. If real credentials or personal data were ever committed, removing the file in a later commit does not erase it from Git history; rotate exposed credentials and remove the sensitive history before publishing.
